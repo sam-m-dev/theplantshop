@@ -1,0 +1,15 @@
+{
+  "name": "plantshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mdb-ui-kit": "^3.11.0",
+    "node-sass": "^7.0.1"
+  }
+}

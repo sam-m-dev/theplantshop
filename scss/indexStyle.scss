@@ -1,0 +1,365 @@
+@import 'reset';
+@import 'variables.scss';
+@import 'header.scss';
+@import 'footer.scss';
+
+
+body {
+    background-color: $white;
+    background-image: url("../blob-scene-haikei.svg");
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    // background-color: $spacecadet;
+
+    a {
+        color: $spacecadet;
+
+    }
+
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+
+    font-size: 2em;
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+    padding: 2%;
+    border: 1px solid $linen;
+    // background-color: rgba(12, 5, 6, 0.5);
+    border-radius: 5%;
+
+    a {
+        text-decoration: none;
+        color: $yellow;
+        //visibility: hidden;
+    }
+}
+
+
+// animation: heroAnimation 3s ease-in-out 3s 1 normal none;
+
+
+
+
+// @-webkit-keyframes heroAnimation {
+
+//     0%,
+//     100% {
+//         opacity: 0;
+//     }
+
+//     50% {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes fadeinout {
+
+//     0%,
+//     100% {
+//         opacity: 0;
+//     }
+
+//     50% {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes heroAnimation {
+//     0% {
+//         opacity: 0;
+//         transform: scale(0.6);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+// }
+
+.services {
+
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    margin: 1%;
+    flex-wrap: wrap;
+
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-text-services {
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    color: $darkerBrown;
+    margin: 3%;
+    padding: 2%;
+
+
+
+
+    a {
+        text-decoration: none;
+        color: $offwhite;
+        font-size: 90px;
+    }
+}
+
+.banner-text-services.move {
+    animation: servicesAnim 3s ease-out 0s 1 normal forwards;
+}
+
+@keyframes servicesAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mission-statement {
+    display: flex;
+    margin: 1%;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $offwhite;
+    position: relative;
+
+    .section-content {
+        margin: 3%;
+        padding: 2%;
+
+        animation: myAnim2 2s ease 2s 1 normal forwards;
+    }
+
+    @keyframes myAnim2 {
+        0% {
+            opacity: 0;
+            transform: translateX(250px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        color: $gunmetal;
+    }
+
+    p {
+        font-family: 'Lora', serif;
+        color: $gunmetal;
+        font-size: 20px;
+        text-align: center;
+
+    }
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    padding: 3%;
+    animation: slideInRight 3s ease-in-out 2s 1 normal forwards;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+
+
+
+    a {
+        text-decoration: none;
+        color: $offwhite;
+    }
+}
+
+.homeImage-text {
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    visibility: hidden;
+    color: $yellow;
+    // animation: teamAnimation 10s ease-out 0s 1 normal forwards;
+}
+
+#shop.move {
+
+    // animation: teamAnimation 2s ease-out 0s 1 normal forwards;
+    animation: shopAnimation 4s ease-out 0s 1 normal forwards;
+}
+
+
+
+@keyframes shopAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.other {
+    margin: 0.5%;
+}
+
+.plant-image-home {
+    display: flex;
+    position: relative;
+    margin: 0.5%;
+    padding: 0.5%;
+
+}
+
+.picture-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.homeImage-text,
+.homeImage-text-team {
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    // border: 1px solid $linen;
+    // background-color: rgba(12, 5, 6, 0.5);
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5%;
+
+    a {
+        color: $spacecadet;
+    }
+
+    // animation: teamAnimation 10s ease-out 0s 1 normal forwards;
+}
+
+#team.move {
+
+    // animation: teamAnimation 2s ease-out 0s 1 normal forwards;
+    animation: teamAnimation 4s ease-out 0s 1 normal forwards;
+}
+
+
+
+@keyframes teamAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.custom-shape-divider-top-1648063866 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* width="320" height="240" */
+
+
+// .section-title {
+//     width: 100px;
+//     height: 100px;
+//     background: red;
+//     position: relative;
+//     animation: myAnim 1s ease 0s 1 normal forwards;
+// }
+
+
+
+
+
+// .section-content {
+
+//     position: relative;
+//     animation: myAnim2 1s ease 0s 1 normal forwards;
+
+// }
+
+// @keyframes myAnim2 {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(250px);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
