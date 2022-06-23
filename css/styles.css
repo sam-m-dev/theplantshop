@@ -1,0 +1,582 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Han+Sans&family=Cantata+One&family=Merriweather:wght@300;900&family=Shrikhand&family=Unna:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* colors */
+/*  */
+.card {
+  background-color: transparent;
+}
+
+.cafe-wrapper {
+  padding: 0px;
+}
+
+.cafe-img {
+  display: flex;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+.info-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-img img {
+  width: 100%;
+  height: auto;
+}
+
+.img-wrapper {
+  display: flex;
+  width: 60%;
+}
+
+.info-wrapper {
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(5, 74, 41) 50%);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flower-content {
+  display: flex;
+  align-items: center;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* colors */
+/*  */
+footer {
+  background-color: #0A0908;
+}
+footer p {
+  color: #FCFCFC;
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.new-text {
+  font-family: "Cantata One", serif;
+  font-size: 0.8em;
+  text-align: inherit;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand,
+.navbar-toggler {
+  font-size: 0.7rem !important;
+}
+
+header {
+  background-color: #FCFCFC;
+  align-items: center;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  display: flex !important;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 1%;
+}
+
+@media (min-width: 300px) {
+  .navbar-brand,
+.navbar-toggler {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 480px) {
+  .navbar-brand,
+.navbar-toggler {
+    font-size: 1.25rem !important;
+  }
+}
+.content-wrapper {
+  margin: 0px;
+  padding: 0px !important;
+}
+.content-wrapper a {
+  text-decoration: none;
+  color: #CFD11A;
+  width: 100%;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.hero-image .hero {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  display: flex;
+  padding: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+.hero-image .hero .hero-card-title {
+  margin: 2%;
+  padding: 2%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  margin: 2% !important;
+  padding: 2% !important;
+}
+
+.about-section,
+.team-section {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.about-section .card-img-overlay,
+.team-section .card-img-overlay {
+  width: 50%;
+  position: absolute;
+  padding: 1rem;
+  border-radius: calc(0.25rem - 1px);
+  display: flex;
+  align-items: center;
+}
+.about-section .card-img-overlay .card-title,
+.team-section .card-img-overlay .card-title {
+  display: flex;
+  border: 1px solid #FCFCFC;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10%;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 100%;
+  height: 60%;
+  align-items: center;
+}
+
+.about-section .about {
+  left: 0;
+  justify-content: flex-start;
+}
+
+.team-section .team {
+  right: unset;
+  left: 0;
+  justify-content: flex-end;
+}
+
+.services-section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+.our-services-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.our-services-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.rounded-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.new-arrivals-container {
+  height: 100%;
+}
+
+.new-arrivals-container > * {
+  padding: 2%;
+}
+
+.new-arrivals-wrapper {
+  display: flex;
+  padding: 2%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.workshop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.workshop-card {
+  padding: 0px;
+}
+
+.workshop-section-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.products-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2%;
+  width: 90%;
+  padding: 3%;
+}
+.products-section .section-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 26px;
+  color: #22333B;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.products-section .section-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products-section .section-content-wrapper .picture-wrapper {
+  width: 25%;
+  margin: 1%;
+  padding: 1%;
+}
+.products-section .section-content-wrapper .picture-wrapper img {
+  border-radius: 5%;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  font-family: "Abril Fatface", cursive;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+}
+
+p {
+  font-family: "Cantata One", serif;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=styles.css.map */

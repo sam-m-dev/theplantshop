@@ -1,0 +1,42 @@
+.services-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column
+}
+
+.our-services-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.our-services-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.rounded-circle {
+    width: 100%;
+    height: 100%;
+}
+
+.new-arrivals-container {
+    height: 100%;
+
+}
+
+.new-arrivals-container>* {
+    padding: 2%;
+}
+
+.new-arrivals-wrapper {
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
