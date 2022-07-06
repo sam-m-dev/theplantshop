@@ -5,3 +5,74 @@
         text-align: inherit;
     }
 
+    .plant-arrivals {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        //height: 50vh;
+        justify-content: space-evenly;
+    }
+
+    .pant-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        padding: 5% 0;
+        margin: 5% 0;
+    }
+
+    .arrivals-card {
+        border: none;
+    }
+
+    .arrivals-card-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .arrivals-card-title {
+        font-size: 1em;
+
+    }
+
+    .glide-controls {
+        display: flex;
+        position: absolute;
+        bottom: 45%;
+        width: 100%;
+        justify-content: space-between;
+        height: 10%;
+    }
+
+    .glide-wrapper {
+        display: flex;
+        position: relative;
+    }
+
+    .glide__bullets {
+        bottom: 0px;
+    }
+
+
+    @media (min-width: 576px) {
+
+        .pant-section-wrapper {
+            padding: 2% 0;
+            margin: 3% 0;
+        }
+
+        .arrival-section-title {
+            margin: 2% 0;
+            padding: 2% 0;
+        }
+
+        .glide-wrapper {
+            margin: 2% 0;
+            padding: 3% 0;
+        }
+
+    }

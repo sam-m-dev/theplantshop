@@ -1,12 +1,8 @@
 .content-wrapper {
-    margin: 0px;
-    padding: 0px !important;
 
     a {
         text-decoration: none;
-        color: $yellow;
         width: 100%;
-
     }
 
 }
@@ -31,48 +27,40 @@
         display: flex;
         padding: 1rem;
         border-radius: calc(0.25rem - 1px);
-        // justify-content: center;
-        // align-items: center;
+      
 
         .hero-card-title {
-            // background-color: $transparentBlack;
-            // border: 2px solid $yellow;
+          
             margin: 2%;
             padding: 2%;
             height: 100%;
             width: 100%;
             display: flex;
             align-items: center;
-            // font-family: $font-test2;
-            // text-align: center;
+         
         }
 
     }
 }
 
-.row {
-    margin: 2% !important;
-    padding:2% !important;
-}
+
 
 .about-section,
-.team-section {
+.team-section { 
     margin: 0px !important;
     padding: 0px !important;
 
     .card-img-overlay {
         width: 50%;
         position: absolute;
-
         padding: 1rem;
         border-radius: calc(0.25rem - 1px);
         display: flex;
-        // justify-content: center;
         align-items: center;
 
         .card-title {
             display: flex;
-            border: 1px solid $offwhite;
+          //  border: 1px solid $offwhite;
             background-color: $transparentBlack;
             padding: 10%;
             margin-bottom: 0px;

@@ -1,13 +1,138 @@
-          .mapouter {
-              position: relative;
-              text-align: right;
-              height: 100%;
-              width: 100%;
-          }
+// Gooogle Maps
 
-          .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              height: 100%;
-              width: 100%;
-          }
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+}
+
+
+//Contact form
+.contact-form {
+    padding: 2% 0;
+    margin: 2% 0;
+    background-color: $darkgreen;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    padding: 3%;
+}
+
+.form-label {
+    color: $grey !important;
+}
+
+.contact-form-title {
+    // margin: 5%;
+    // padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: $grey;
+}
+
+
+.form-control {
+    border: none;
+    color: $grey;
+}
+
+.submit {
+    border: none;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+    padding: 5% 0;
+}
+
+.contact-section-wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding: 5% 0 2%;
+    margin: 5% 0 2%;
+    flex-direction: column-reverse;
+}
+
+.contact-map {
+    // margin: 5% 0;
+    display: flex;
+    padding: 0;
+}
+
+.contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    padding: 5% 0;
+}
+
+.contact-text {
+    font-size: 0.8rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-map {
+    height: 50%;
+}
+
+.address {
+
+    p,
+    h5 {
+        color: $darkgreen
+    }
+
+}
+
+.store-map {
+    display: flex;
+    height: 100%;
+}
+
+.address-wrapper,
+.hours {
+    padding: 2%;
+    margin: 3%;
+
+    p {
+        color: $grey;
+    }
+
+}
+
+.hours-card-title {}
+
+.hours-card-text {}
+
+@media (min-width:576px) {
+    .contact-section-wrapper {
+        flex-direction: row;
+    }
+
+    .contact-form {
+        margin: 0
+    }
+}

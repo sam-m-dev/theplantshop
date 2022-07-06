@@ -1,6 +1,15 @@
 @import 'reset';
+// Required Core Stylesheet
+@import '../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss';
+
+
+// Optional Theme Stylesheet
+@import '../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss';
+
 @import 'variables';
+
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Han+Sans&family=Cantata+One&family=Merriweather:wght@300;900&family=Shrikhand&family=Unna:wght@400;700&display=swap');
+@import 'colorScheme';
 @import 'about';
 @import 'body';
 @import 'cafe';

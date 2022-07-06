@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Plant Shop</title>
 
-
+    <script src="https://kit.fontawesome.com/51e2d62e93.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -30,8 +30,8 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
 
-                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,20 +42,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li> -->
+
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li>
@@ -91,351 +78,387 @@
             </div>
         </nav>
 
-
-        <!-- <h1><a href="/index.html"></a></h1>
-        <nav>
-            <ul>
-                <li><a href="/products.html">New Arrivals</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-
-
-            </ul>
-        </nav> -->
-
-
-
     </header>
 
-    <div class="content-wrapper container-fluid">
+    <section class="services-section ">
 
-        <section class="hero-banner">
-            <div class="hero-image card">
-                <img src="./assets/homeImages/ourstore.jpg" alt="">
+        <div class="our-services-title">
+            <h2>our services</h2>
+        </div>
 
-                <div class="hero card-img-overlay">
-                    <h1 class="hero-card-title card-title">
-                        <a href="/home.html">The<br> Plant<br> Shop</a>
-                    </h1>
+        <div class="our-services-content">
+            <ul class="services-list">
+                <li><img src="./assets/nursery.jpg" class="rounded-circle"> </li>
+                <li><img src="./assets/bouquet.jpg" class="rounded-circle"></li>
+                <li><img src="./assets/workshop.jpg" class="rounded-circle"></li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="plant-arrivals ">
+
+        <div class="pant-section-wrapper">
+            <div class="arrival-section-title">
+                <h2 class="arrivals-card-title card-title">New Arrivals</h2>
+            </div>
+            <div class="glide-wrapper">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="arrivals-card card ">
+                                    <img src="/assets/new/misc.jpg" class="rounded">
+                                    <div class="arrivals-card-img card-img-overlay">
+                                        <h2 class="arrivals-card-title card-title">Card title</h2>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="arrivals-card card ">
+                                    <img src="/assets/new/peperomiasmall.jpg" class="rounded">
+                                    <div class="arrivals-card-img card-img-overlay">
+                                        <h2 class="arrivals-card-title card-title">Card title</h2>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="arrivals-card card ">
+                                    <img src="/assets/new/ufo.jpg" class="rounded">
+                                    <div class="arrivals-card-img card-img-overlay">
+                                        <h2 class="arrivals-card-title card-title">Card title</h2>
+                                        <!-- <p class="arrivals-card-text card-text">This is a wider card with supporting
+                                            text below as a
+                                            natural lead-in to additional content.
+                                            This content is a little bit longer.</p> -->
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                        </div>
+                    </div>
+
+                    <div data-glide-el="controls" class="glide-controls">
+                        <button data-glide-dir="<" type="button" class="btn "><i
+                                class="fa-solid fa-angle-left"></i></button>
+                        <button data-glide-dir=">" type="button" class="btn "><i
+                                class="fa-solid fa-angle-right"></i></button>
+                    </div>
                 </div>
             </div>
-        </section>
 
+        </div>
 
+    </section>
 
+    <section class="workshop-section ">
 
-        <section class="services-section container-fluid">
+        <div class="workshop-container ">
 
-            <div class="our-services-title">
-                <h2>our services</h2>
-            </div>
+            <div class="workshop-row">
 
-            <div class="our-services-content row">
+                <div class="workshop-info-wrapper">
 
-                <div class="service-item col-3 col-md-3 col-lg-3">
-                    <img src="./assets/nursery.jpg" class="rounded-circle">
-                </div>
-                <div class="service-item col-3 col-md-3 col-lg-3">
-                    <img src="./assets/bouquet.jpg" class="rounded-circle">
-                </div>
-                <div class="service-item col-3 col-md-3 col-lg-3">
-                    <img src="./assets/workshop.jpg" class="rounded-circle">
-                </div>
+                    <div class="workshop-categories" id="workshop-row1">
 
-            </div>
+                        <div class="workshop-item " id="1">
+                            <img src="/assets/wrkshp1.jpg" class="workshop-pic " alt="...">
+                            <div class="workshop-card-overlay">
+                                <h2 class="workshop-title ">workshop title</h2>
+                            </div>
 
-        </section>
-
-        <section class="new-section container-fluid">
-            <div class="new-section-wrapper row">
-
-                <div class="content col-12 col-sm-6">
-                    <div class="new-wrapper card">
-                        <div class="new-title card-title">
-                            <h2>
-                                New arrivals
-                            </h2>
                         </div>
 
-                        <div class="new-text card-text d-none d-sm-flex">
-                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <div class="workshop-item  " id="2">
+                            <img src="/assets/wrkshp2.jpg" class="workshop-pic " alt="...">
+                            <div class="workshop-card-overlay">
+                                <h2 class="workshop-title">workshop title</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="workshop-item " id="3">
+                            <img src="/assets/wrkshp3.jpg" class="workshop-pic " alt="...">
+                            <div class="workshop-card-overlay">
+
+                                <h2 class="workshop-title">workshop title</h2>
+
+                            </div>
+                        </div>
+
+                        <div class="workshop-item" id="4">
+                            <img src="/assets/wrkshp4.jpg" class="workshop-pic " alt="...">
+                            <div class="workshop-card-overlay">
+                                <h2 class="workshop-title">workshop title</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="info-img col-12 col-sm-6">
-
-                    <div class="new-arrivals-container row">
-
-                        <div class="new-arrivals-wrapper col-8">
-
-                            <div class="new-arrival-img-wrapper">
-                                <img src="assets/new/monsteraMedium.jpg">
-                            </div>
-
-
-                        </div>
-
-                        <div class="new-arrivals-wrapper col-4">
-
-                            <div class="new-arrival-img-wrapper col-12">
-                                <img src="assets/new/calatea.jpg">
-                            </div>
-
-                            <div class="new-arrival-small row g-1">
-                                <div class="new-arrival-img-wrapper col-6">
-                                    <img src="assets/new/alocasia.jpg">
-                                </div>
-                                <div class="new-arrival-img-wrapper col-6">
-                                    <img src="assets/new/alocasia.jpg">
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-            </div>
-
-        </section>
-
-
-        <section class="workshop-section container-fluid">
-
-            <div class="workshop-container row">
-
-                <div class="workshop col-6">
-                    <div class="workshop-section-title row">Workshops</div>
-
-                    <div class="workshop-items d-none d-sm-flex col-sm-6">
-
-                        <div class="workshop-item card">
-                            <div class="workshop-card card-body">
-                                <div class="workshop-title card-title">
-                                    <h3>workshop titile </h3>
-                                </div>
-                                <div class="workshop-details card-text">
-                                    <p class="workshop-text text-truncate">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Cumque nobis quidem
-                                        aliquam dicta sed, optio maxime perspiciatis sunt itaque delectus doloribus
-                                        possimus rerum architecto doloremque cupiditate, at ullam modi animi. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="workshop-item card">
-                            <div class="workshop-card card-body">
-                                <div class="workshop-title card-title">
-                                    <h3>workshop titile </h3>
-                                </div>
-                                <div class="workshop-details card-text">
-                                    <p class="workshop-text text-truncate">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Cumque nobis quidem
-                                        aliquam dicta sed, optio
-                                        maxime perspiciatis sunt itaque delectus doloribus possimus rerum architecto
-                                        doloremque cupiditate, at
-                                        ullam modi animi. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="workshop-items d-none d-sm-flex col-sm-6">
-
-                        <div class="workshop-item card">
-                            <div class="workshop-card card-body">
-                                <div class="workshop-title card-title">
-                                    <h3>workshop titile </h3>
-                                </div>
-                                <div class="workshop-details card-text">
-                                    <p class="workshop-text text-truncate">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Cumque nobis quidem
-                                        aliquam dicta sed, optio
-                                        maxime perspiciatis sunt itaque delectus doloribus possimus rerum architecto
-                                        doloremque cupiditate, at
-                                        ullam modi animi. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="workshop-item card">
-                            <div class="workshop-card card-body">
-                                <div class="workshop-title card-title">
-                                    <h3>workshop titile </h3>
-                                </div>
-                                <div class="workshop-details card-text">
-                                    <p class="workshop-text text-truncate">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Cumque nobis quidem
-                                        aliquam dicta sed, optio
-                                        maxime perspiciatis sunt itaque delectus doloribus possimus rerum architecto
-                                        doloremque cupiditate, at
-                                        ullam modi animi. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="workshop col-6">
+                <div class="workshop " id="workshop-details">
                     <div class="workshop-img">
-                        <img src="./assets/workshop2.jpg">
+                        <div class="workshop-img-wrapper">
+
+                            <div class="workshop-card">
+                                <div class="workshop-details-overlay ">
+                                    <button class="reset" id="5">close x </button>
+                                    <h2 class="workshop-card-title ">Workshops</h2>
+                                    <p class="workshop-card-text "></p>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-
             </div>
-        </section>
 
-        <section class="flower-section container-fluid">
+        </div>
+    </section>
 
-            <div class="flower-section-wrapper row">
+    <section class="florist-section ">
+        <div class="florist-section-title ">
+            <h2>
+                Florist
+            </h2>
+        </div>
+        <div class="florist-section-wrapper row">
 
-                <div class="flower-img col-6">
-                    <img src="./assets/bouquet2.jpg">
+            <div class="florist-content florist-content d-none d-sm-flex col-sm-4">
+                <div class="florist-wrapper card ">
+                    <div class="florist-title card-title">
+                        <h3>
+                            Flower arrangements
+                        </h3>
+                    </div>
 
+                    <div class="florist-text card-text ">
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="flower-content col-6">
-                    <div class="flower-card card">
-                        <div class="flower-details card-body">
-                            <div class="flower-title card-title">
-                                <h2>flower arrangement</h2>
+            <div class="florist-img col-12 col-sm-8">
+
+                <div class="florist-container row g-1">
+
+                    <div class="florist-wrapper col-8">
+
+                        <div class="florist-img-wrapper">
+                            <img src="assets/homeImages/bouquet12.jpg" class="rounded">
+                        </div>
+
+
+                    </div>
+
+                    <div class="florist-wrapper col-4" id="flowers2">
+
+                        <div class="florist-img-wrapper col-12">
+                            <img src="assets/homeImages/bouquet11.jpg" class="rounded">
+                        </div>
+                        <div class="florist-img-wrapper col-12">
+                            <img src="assets/homeImages/bouquet10.jpg" class="rounded">
+                        </div>
+
+                        <!-- <div class="florist-small row ">
+                                <div class="florist-img-wrapper col-6">
+                                    <img src="assets/new/alocasia.jpg " class="rounded">
+                                </div>
+                                <div class="florist-img-wrapper col-6">
+                                    <img src="assets/new/alocasia.jpg" class="rounded">
+                                </div>
                             </div>
 
-                            <div class="flower-text card-text d-none d-sm-block">
-
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consequuntur nam in reprehenderit nisi iure quo? Sint nemo nam,
-                                    amet
-                                    error, vitae commodi reprehenderit rerum earum mollitia ea blanditiis quam.
-                            </div>
-                            </p>
-                        </div>
+                            <div class="florist-small row ">
+                                <div class="florist-img-wrapper col-6">
+                                    <img src="assets/new/alocasia.jpg " class="rounded">
+                                </div>
+                                <div class="florist-img-wrapper col-6">
+                                    <img src="assets/new/alocasia.jpg" class="rounded">
+                                </div>
+                            </div> -->
 
                     </div>
+
+
                 </div>
 
             </div>
-        </section>
-
-        <section class="cafe-section container-fluid">
-            <div class="cafe-section-wrapper row">
-
-                <div class="content col-6">
-                    <div class="cafe-wrapper card">
-                        <div class="cafe-title card-title">
-                            <h2>
-                                our cafe
-                            </h2>
-                        </div>
-
-                        <div class="cafe-text card-text">
-                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="cafe-img col-6">
-
-                    <div class="cafe-wrapper col-4">
-
-                        <div class="cafe-img-wrapper col-12">
-                            <img src="assets/new/calatea.jpg">
-                        </div>
-
-                        <div class="cafe-img-wrapper col-12">
-                            <img src="assets/new/alocasia.jpg">
-                        </div>
-
-                        <div class="cafe-img-wrapper col-12">
-                            <img src="assets/new/calatea.jpg">
-                        </div>
 
 
 
-                    </div>
 
-                    <div class="cafe-wrapper col-8">
 
-                        <div class="cafe-img-wrapper">
-                            <img src="assets/coffeshop1.jpg">
+
+
+
+
+        </div>
+
+    </section>
+
+    <section class="cafe-section">
+
+
+        <div class="cafe-location-wrapper row">
+            <div class="cafe-section-wrapper  col-12">
+                <div class="hours-card card">
+                    <img src="/assets/cafe2.jpg" class="cafe-img card-img" alt="...">
+                    <div class="hours-card-overlay card-img-overlay">
+                        <div class="cafe-section-title">
+                            <h2>our cafe</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                         </div>
 
 
                     </div>
                 </div>
-
-                <!-- </div> -->
-
-
             </div>
 
-        </section>
 
-        <section class="contact-section">
+        </div>
 
-            <div class="contact-section-wrapper row">
+    </section>
 
-                <div class="contact-map col-12 col-sm-6">
+    <section class="location-section">
+
+    </section>
+
+    <section class="contact-section">
+
+        <div class="contact-section-title">
+            <h1> Find our Shop</h1>
+        </div>
+
+        <div class="contact-section-wrapper">
+            <div class="address   col-12 col-sm-6 ">
+                <div class="store-map">
                     <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                        <div class="gmap_canvas "><iframe class="google-map rounded" width="100%" height="100%"
+                                id="gmap_canvas"
                                 src="https://maps.google.com/maps?q=vancouver&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                     </div>
 
                 </div>
+            </div>
 
-                <div class="contact-form col-12 col-sm-6">
-                    <div class="contact-form-card card">
-                        <div class="contact-form card-body">
-                            <div class="contact-form card-title">
-                                <h2>contact</h2>
+            <div class="contact-form  col-12 col-sm-6   rounded">
+                <div class="contact-form-wrapper ">
+                    <div class="contact-form-title">
+                        <h2>adress</h2>
+                    </div>
+
+                    <div class="address-wrapper">
+                        <p class="address-text card-text">66666 imaginary st</p>
+                        <p class="address-text card-text">V0X 0X0</p>
+                        <p class="address-text card-text">Vancouver, British Columbia</p>
+                        <br>
+                        <p class="address-text card-text"> (604)000-0000</p>
+                        <p class="address-text card-text">plantcafe@plant.cafe
+                        </p>
+                    </div>
+
+                    <div class="hours">
+                        <h2 class="hours-card-title card-title">Opening Hours</h2>
+                        <p class="hours-card-text card-text">Mon - Fri : 9am - 5pm</p>
+                        <p class="hours-card-text card-text">Sat : 10am - 6pm</p>
+                        <p class="hours-card-text card-text">Sun: closed</p>
+                    </div>
+                    <!-- <form>
+                        <div class="name-input row">
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First name"
+                                    aria-label="First name">
                             </div>
-                            <form>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="First name"
-                                            aria-label="First name">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Last name"
-                                            aria-label="Last name">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="name@example.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <button class="">submit</button>
-                            </form>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName"placeholder="Last name" aria-label="Last name">
+                            </div>
                         </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageInput" class="form-label">Message</label>
+                            <textarea class="form-control" id="messageInput" rows="3"></textarea>
+                        </div>
+                        <button class="submit">submit</button>
+                    </form> -->
+                </div>
 
+                <!-- </div> -->
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- </div>
+</div> -->
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="footer-links">
+
+                <div class="footer-brand col-3">
+                    <h1>The Plant Cafe</h1>
+                    <div class="footer-socials">
+
+                        <ul class="social-icons">
+                            <li><i class="fa-brands fa-facebook-square"></i><span
+                                    class="icon-text d-none d-sm-flex">facebook</span> </li>
+                            <li><i class="fa-brands fa-instagram"></i><span
+                                    class="icon-text d-none d-sm-flex">instagram</span></li>
+                            <li><i class="fa-brands fa-twitter"></i><span
+                                    class="icon-text d-none d-sm-flex">twitter</span></li>
+                        </ul>
                     </div>
                 </div>
 
-            </div>
-        </section>
 
-    </div>
-    <footer>
-        <div class="footer-wrapper">
-            <p>lorem Ipsum</p>
+                <div class="subscribe col-9">
+
+                    <form class="newsletter">
+                        <label for="emailInput" class="newsletter-subscription form-label">Subscribe to our
+                            newsletter</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                    </form>
+                </div>
+
+            </div>
+
+
+            <!-- <div class="footer-nav">
+
+             <h6>site map</h6>
+                <ul class="footer-menu">
+                    <li>home</li>
+                    <li>services</li>
+                    <li>arrivals</li>
+                    <li>workshops</li>
+                    <li>florist</li>
+                    <li>cafe</li>
+                    <li>hours</li>
+                </ul>
+            </div> -->
+
         </div>
     </footer>
 
@@ -446,6 +469,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
     <script src="index.js"></script>
 
 </body>

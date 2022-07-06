@@ -1,7 +1,103 @@
 .cafe-wrapper {
     padding: 0px;
+    border: none;
+}
+
+.cafe-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.hours-card-overlay {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 0px
 }
 
 .cafe-img {
+    border-radius: 0px
+}
+
+
+
+
+.cafe-img {
     display: flex;
+}
+
+.cafe-section-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cafe-section-title {
+    // margin: 5%;
+    // padding: 5%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        color: $grey;
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+        color: $grey;
+    }
+
+}
+
+.hours-address-overlay {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+// location
+
+.location-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.location-wrapper {
+    display: flex;
+    // width: 100%;
+    background-color: $lightgreen;
+    flex-direction: row-reverse;
+
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h5,
+    p {
+        color: $grey;
+    }
+}
+
+.cafe-location-wrapper {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.cafe-section-wrapper {
+    padding: 0px;
 }

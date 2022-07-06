@@ -1,5 +1,6 @@
 $(window).on('load', function (e) {
 
+    // $('.workshop-overlay').empty();
     function bannerTimeout() {
         var element = document.getElementById('#heroText');
         // element.style.display = "block";
@@ -63,4 +64,118 @@ $(window).on('load', function (e) {
     serviceImage.forEach(image => {
         observer.observe(image);
     });
+
+    //new Glide('.glide').mount()
+    var glide = new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        focusAt: 'center',
+        animationDuration: 3000,
+        breakpoints: {
+            480: {
+                //  gap: 15,
+                // peek: 75,
+                perView: 1
+            },
+            768: {
+                perView: 2
+            },
+            1360: {
+                perView: 3
+            },
+            1600: {
+                perView: 4
+            },
+            1960: {
+                perView: 5
+            }
+        }
+    })
+    glide.mount();
+
+
+
+    function workshopDetails(workshopId) {
+        $('.reset').css("display", "block");
+        switch (workshopId) {
+            case 1:
+                // alert("success"+workshopId);
+                console.log('test')
+                $('.workshop-card-text').html('content 1');
+                $('.workshop-card-title').html('title1');
+
+                break;
+            case 2:
+                //  alert("success" + workshopId);
+                $('.workshop-card-text').html('content 2');
+                $('.workshop-card-title').html('title2');
+                break;
+
+            case 3:
+                //  alert("success" + workshopId);
+                $('.workshop-card-text').html('content 3');
+                $('.workshop-card-title').html('title 3');
+                break;
+
+            case 4:
+                // alert("success" + workshopId);
+                $('.workshop-card-text').html('content 4');
+                $('.workshop-card-title').html('title 4');
+
+                break;
+
+            case 5:
+                // alert("success" + workshopId);
+                //  $('.workshop-overlay').empty();
+                $('.workshop-card-text').empty();
+                $('.workshop-card-title').html('Workshops');
+                $('.reset').css("display", "none");
+                break;
+
+
+
+            default:
+                // alert(workshopId);
+                $('.workshop-img').html("<p>Hello World</p>");
+            // code block
+        }
+        //   showButton();
+        //  $('.workshop-img').css("background-color", "red")
+
+    }
+    $('.workshop-item').click(function () {
+        $('.reset').css("display", "block");
+        //  alert("test");
+        var selectedWorkshop = parseInt(this.id);
+        workshopDetails(selectedWorkshop);
+
+    });
+
+    // showButton();
+    // function showButton(){
+    //     if ($('.workshop-overlay').is(':empty')) {
+
+
+    //     }else{
+    //         $('.reset').show();
+    //     }
+    // }
+
+
+    $('.reset').click(function () {
+
+        //     alert("success yay");
+        //     //   $('.workshopDetails').empty();
+
+        var resetWorkshop = parseInt(this.id);
+        workshopDetails(resetWorkshop);
+
+
+    });
+
 })
+
+
+
+

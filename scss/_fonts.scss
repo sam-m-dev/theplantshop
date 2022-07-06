@@ -2,9 +2,10 @@ h1 {
     font-family: $font-brand;
 }
 
-h2 {
+h2,
+.newsletter-subscription {
     font-family: $font-titles;
- 
+
 }
 
 h3 {
@@ -19,4 +20,10 @@ h1,
 h2,
 h3 {
     text-transform: capitalize;
+}
+
+@media (min-width:576px) {
+    .worshop-title {
+        font-size: 1.2em;
+    }
 }
