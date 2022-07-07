@@ -50,8 +50,19 @@
 
     .glide-wrapper {
         display: flex;
+        // visibility:hidden;
+        //display: none;
         position: relative;
     }
+
+    .glide {
+        visibility: hidden;
+    }
+
+    .activeSlider {
+        visibility: visible;
+    }
+
 
     .glide__bullets {
         bottom: 0px;

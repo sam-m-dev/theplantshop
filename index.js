@@ -92,7 +92,7 @@ $(window).on('load', function (e) {
             }
         }
     })
-    glide.mount();
+
 
 
 
@@ -174,8 +174,23 @@ $(window).on('load', function (e) {
 
     });
 
-})
+
+
+    function mountSlider() {
+        glide.mount();
+        $('.glide').addClass('activeSlider');
+    }
+    mountSlider();
+
+
+});
 
 
 
+
+
+// $(document).ready(function () {
+//     console.log("ready!");
+//     $('.glide-wrapper').css("display", "block");
+// });
 
