@@ -174,8 +174,6 @@ $(window).on('load', function (e) {
 
     });
 
-
-
     function mountSlider() {
         glide.mount();
         $('.glide').addClass('activeSlider');

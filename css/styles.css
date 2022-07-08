@@ -285,10 +285,10 @@ body {
 .navbar-brand h1 {
   color: black;
 }
-
-.navbar-toggler {
-  background-color: rgba(255, 255, 255, 0.372);
+.navbar-brand h1 .fa-brands {
+  color: #061911;
 }
+
 .navbar-toggler .fa-solid {
   color: #061911;
 }
@@ -342,6 +342,10 @@ footer p {
   color: #E0E0D6;
 }
 
+.plant-card-title {
+  color: #061911;
+}
+
 .our-services-title h2 {
   color: #061911;
 }
@@ -353,6 +357,17 @@ footer p {
 .plant-arrivals,
 .florist-section {
   background-color: #061911;
+}
+
+.workshop-card-title {
+  color: #E0E0D6;
+}
+
+.cafe-section-title h2 {
+  color: #E0E0D6;
+}
+.cafe-section-title p {
+  color: #E0E0D6;
 }
 
 .our-services-title,
@@ -395,6 +410,10 @@ footer p {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   border-radius: 0px;
+}
+
+.hours-card {
+  border: 0px;
 }
 
 .cafe-img {
@@ -499,6 +518,9 @@ form {
 }
 
 .contact-form-title {
+  margin: 3% 0;
+  padding: 3% 0;
+  color: #E0E0D6;
   display: flex;
   justify-content: center;
 }
@@ -764,10 +786,6 @@ footer p {
   align-items: center;
 }
 
-.arrivals-card-title {
-  font-size: 1em;
-}
-
 .glide-controls {
   display: flex;
   position: absolute;
@@ -810,6 +828,7 @@ footer p {
 }
 .navbar {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.372);
 }
 
 .navbar-brand,
@@ -820,6 +839,8 @@ footer p {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -834,6 +855,17 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.collapsebtn {
+  background: transparent;
+  width: 4em;
+  height: 4em;
+  border: 1px solid #061911;
+}
+.collapsebtn .fa-brands {
+  font-size: 2em;
+  color: #E0E0D6;
 }
 
 @media (min-width: 300px) {
@@ -1031,6 +1063,8 @@ header {
   display: flex;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .workshop-card-overlay h5 {
@@ -1055,14 +1089,8 @@ header {
 
 .workshop-title {
   display: flex;
-  width: 100%;
   word-break: break-word;
   height: auto;
-}
-
-.workshop-card-title {
-  color: #E0E0D6;
-  font-size: 1em;
 }
 
 .products-section {
@@ -1101,11 +1129,14 @@ header {
 
 h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 1em;
 }
 
 h2,
-.newsletter-subscription {
+.newsletter-subscription,
+.workshop-card-title {
   font-family: "Abril Fatface", cursive;
+  font-size: 1.2em;
 }
 
 h3 {
@@ -1122,9 +1153,64 @@ h3 {
   text-transform: capitalize;
 }
 
+.cafe-section-title h2 {
+  font-size: 1.2em;
+}
+.cafe-section-title p {
+  font-size: 1em;
+}
+
+.plant-card-title {
+  font-size: 2.2em;
+}
+
 @media (min-width: 576px) {
-  .worshop-title {
-    font-size: 1.2em;
+  .our-services-title,
+.arrivals-card-title,
+.workshop-card-title,
+.florist-section-title,
+.florist-section-title {
+    font-size: 1.5em;
+  }
+  .cafe-section-title > h2,
+.contact-section-title > h1 {
+    font-size: 1.5em;
+  }
+  .plant-card-title {
+    font-size: 2em;
+  }
+}
+@media (min-width: 720px) {
+  .our-services-title,
+.arrivals-card-title,
+.workshop-card-title,
+.florist-section-title,
+.cafe-section-title > h2,
+.contact-section-title > h1,
+.florist-section-title {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 992px) {
+  .our-services-title,
+.arrivals-card-title,
+.workshop-card-title,
+.florist-section-title,
+.cafe-section-title > h2,
+.contact-section-title > h1,
+.florist-section-title {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1200px) {
+  .our-services-title,
+.arrivals-card-title,
+.workshop-card-title,
+.florist-section-title,
+.cafe-section-title > h2,
+.contact-section-title > h1,
+.florist-section-title {
+    font-size: 2.2em;
   }
 }
 

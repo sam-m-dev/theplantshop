@@ -229,6 +229,8 @@
     display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
     h5 {
@@ -254,13 +256,7 @@
 
 .workshop-title {
     display: flex;
-    width: 100%;
+    // width: 100%;
     word-break: break-word;
     height: auto;
-}
-
-
-.workshop-card-title {
-    color: $grey;
-    font-size: 1em;
 }

@@ -23,22 +23,26 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
             <div class="container-fluid">
+
                 <a class="navbar-brand" href="#">
-                    <h1>The Plant Shop</h1>
+                    <h1>The Plant Shop <i class="fa-brands fa-pagelines"></i></h1>
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <i class="fa-solid fa-bars"></i>
-
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
                         </li>
@@ -50,13 +54,16 @@
 
                 </div>
             </div>
+
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
+
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
+
                 <div class="offcanvas-body">
                     <div>
                         Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
@@ -69,8 +76,8 @@
                             Dropdown button
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Services</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
@@ -92,7 +99,6 @@
                 <li><img src="./assets/bouquet.jpg" class="rounded-circle"></li>
                 <li><img src="./assets/workshop.jpg" class="rounded-circle"></li>
             </ul>
-
         </div>
 
     </section>
@@ -100,18 +106,46 @@
     <section class="plant-arrivals ">
 
         <div class="pant-section-wrapper">
+
             <div class="arrival-section-title">
                 <h2 class="arrivals-card-title card-title">New Arrivals</h2>
             </div>
+
             <div class="glide-wrapper">
+
                 <div class="glide">
+
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             <li class="glide__slide">
                                 <div class="arrivals-card card ">
                                     <img src="/assets/new/misc.jpg" class="rounded">
                                     <div class="arrivals-card-img card-img-overlay">
-                                        <h2 class="arrivals-card-title card-title">Card title</h2>
+                                        <h2 class="plant-card-title card-title">Other</h2>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="arrivals-card card ">
+                                    <img src="/assets/new/alocasia.jpg" class="rounded">
+                                    <div class="arrivals-card-img card-img-overlay">
+                                        <h2 class="plant-card-title card-title">alocasia</h2>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="arrivals-card card ">
+                                    <img src="/assets/new/calatea.jpg" class="rounded">
+                                    <div class="arrivals-card-img card-img-overlay">
+                                        <h2 class="plant-card-title card-title">calatea</h2>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="arrivals-card card ">
+                                    <img src="/assets/new/monsteraMedium.jpg" class="rounded">
+                                    <div class="arrivals-card-img card-img-overlay">
+                                        <h2 class="plant-card-title card-title">Monstera</h2>
                                     </div>
                                 </div>
                             </li>
@@ -119,7 +153,7 @@
                                 <div class="arrivals-card card ">
                                     <img src="/assets/new/peperomiasmall.jpg" class="rounded">
                                     <div class="arrivals-card-img card-img-overlay">
-                                        <h2 class="arrivals-card-title card-title">Card title</h2>
+                                        <h2 class="plant-card-title card-title">Peperomia</h2>
 
                                     </div>
                                 </div>
@@ -129,12 +163,7 @@
                                 <div class="arrivals-card card ">
                                     <img src="/assets/new/ufo.jpg" class="rounded">
                                     <div class="arrivals-card-img card-img-overlay">
-                                        <h2 class="arrivals-card-title card-title">Card title</h2>
-                                        <!-- <p class="arrivals-card-text card-text">This is a wider card with supporting
-                                            text below as a
-                                            natural lead-in to additional content.
-                                            This content is a little bit longer.</p> -->
-
+                                        <h2 class="plant-card-title card-title">U.F.O</h2>
                                     </div>
                                 </div>
                             </li>
@@ -144,6 +173,9 @@
                             <button class="glide__bullet" data-glide-dir="=0"></button>
                             <button class="glide__bullet" data-glide-dir="=1"></button>
                             <button class="glide__bullet" data-glide-dir="=2"></button>
+                            <button class="glide__bullet" data-glide-dir="=3"></button>
+                            <button class="glide__bullet" data-glide-dir="=4"></button>
+                            <button class="glide__bullet" data-glide-dir="=5"></button>
                         </div>
                     </div>
 
@@ -173,7 +205,7 @@
                         <div class="workshop-item " id="1">
                             <img src="/assets/wrkshp1.jpg" class="workshop-pic " alt="...">
                             <div class="workshop-card-overlay">
-                                <h2 class="workshop-title ">workshop title</h2>
+                                <h2 class="workshop-title ">Repot</h2>
                             </div>
 
                         </div>
@@ -181,7 +213,7 @@
                         <div class="workshop-item  " id="2">
                             <img src="/assets/wrkshp2.jpg" class="workshop-pic " alt="...">
                             <div class="workshop-card-overlay">
-                                <h2 class="workshop-title">workshop title</h2>
+                                <h2 class="workshop-title">Propagate</h2>
                             </div>
 
                         </div>
@@ -190,7 +222,7 @@
                             <img src="/assets/wrkshp3.jpg" class="workshop-pic " alt="...">
                             <div class="workshop-card-overlay">
 
-                                <h2 class="workshop-title">workshop title</h2>
+                                <h2 class="workshop-title">Learn</h2>
 
                             </div>
                         </div>
@@ -198,7 +230,7 @@
                         <div class="workshop-item" id="4">
                             <img src="/assets/wrkshp4.jpg" class="workshop-pic " alt="...">
                             <div class="workshop-card-overlay">
-                                <h2 class="workshop-title">workshop title</h2>
+                                <h2 class="workshop-title">Other</h2>
                             </div>
                         </div>
                     </div>
@@ -328,6 +360,15 @@
 
         </div>
 
+        <div class="cafe-img">
+            <div class="cafe2 col-6">
+                <img src="/assets/cafe4.jpg" class="cafe-img card-img" alt="...">
+            </div>
+            <div class="cafe3 col-6">
+                <img src="/assets/cafe3.jpg" class="cafe-img card-img" alt="...">
+            </div>
+        </div>
+
     </section>
 
     <section class="location-section">
@@ -356,19 +397,7 @@
 
             <div class="contact-form  col-12 col-sm-6   rounded">
                 <div class="contact-form-wrapper ">
-                    <div class="contact-form-title">
-                        <h2>adress</h2>
-                    </div>
 
-                    <div class="address-wrapper">
-                        <p class="address-text card-text">66666 imaginary st</p>
-                        <p class="address-text card-text">V0X 0X0</p>
-                        <p class="address-text card-text">Vancouver, British Columbia</p>
-                        <br>
-                        <p class="address-text card-text"> (604)000-0000</p>
-                        <p class="address-text card-text">plantcafe@plant.cafe
-                        </p>
-                    </div>
 
                     <div class="hours">
                         <h2 class="hours-card-title card-title">Opening Hours</h2>
@@ -376,6 +405,21 @@
                         <p class="hours-card-text card-text">Sat : 10am - 6pm</p>
                         <p class="hours-card-text card-text">Sun: closed</p>
                     </div>
+
+                    <div class="address-wrapper">
+                        <div class="contact-form-title">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <p class="address-text card-text">66666 imaginary st</p>
+                        <p class="address-text card-text">V0X 0X0</p>
+                        <p class="address-text card-text">Vancouver, British Columbia</p>
+                        <br>
+                        <p class="address-text card-text"> <i class="fa-solid fa-phone"></i> (604)000-0000</p>
+                        <p class="address-text card-text"><i class="fa-solid fa-at"></i> plantcafe@plant.cafe
+                        </p>
+                    </div>
+
+
                     <!-- <form>
                         <div class="name-input row">
                             <div class="mb-3">

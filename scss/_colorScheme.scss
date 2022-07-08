@@ -6,6 +6,11 @@ body {
 .navbar-brand {
     h1 {
         color: black;
+
+        .fa-brands {
+            color: $darkgreen;
+        }
+
         //  text-shadow: rgb(0, 21, 36) 1px 0px 0px, rgb(0, 21, 36) 0.540302px 0.841471px 0px, rgb(0, 21, 36) -0.416147px 0.909297px 0px, rgb(0, 21, 36) -0.989992px 0.14112px 0px, rgb(0, 21, 36) -0.653644px -0.756802px 0px, rgb(0, 21, 36) 0.283662px -0.958924px 0px, rgb(0, 21, 36) 0.96017px -0.279415px 0px;
         //   text-shadow: $darkgreen 2px 0px 0px, $darkgreen 1.75517px 0.958851px 0px, $darkgreen 1.0806px 1.68294px 0px, $darkgreen 0.141474px 1.99499px 0px, $darkgreen -0.832294px 1.81859px 0px, $darkgreen -1.60229px 1.19694px 0px, $darkgreen -1.97998px 0.28224px 0px, $darkgreen -1.87291px -0.701566px 0px, $darkgreen -1.30729px -1.5136px 0px, $darkgreen -0.421592px -1.95506px 0px, $darkgreen 0.567324px -1.91785px 0px, $darkgreen 1.41734px -1.41108px 0px, $darkgreen 1.92034px -0.558831px 0px;
     }
@@ -14,7 +19,7 @@ body {
 
 .navbar-toggler {
 
-    background-color: $transparentWhite;
+    //  background-color: $transparentWhite;
 
     .fa-solid {
         color: $darkgreen;
@@ -99,6 +104,15 @@ footer {
     color: $grey;
 }
 
+.plant-card-title {
+    color: $darkgreen;
+    // text-shadow: rgb(5, 21, 14) 1px 0px 0px, rgb(5, 21, 14) 0.540302px 0.841471px 0px, rgb(5, 21, 14) -0.416147px 0.909297px 0px, rgb(5, 21, 14) -0.989992px 0.14112px 0px, rgb(5, 21, 14) -0.653644px -0.756802px 0px, rgb(5, 21, 14) 0.283662px -0.958924px 0px, rgb(5, 21, 14) 0.96017px -0.279415px 0px;
+    //text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+    //  text-shadow: rgb(224, 224, 214) 2px 0px 0px, rgb(224, 224, 214) 1.75517px 0.958851px 0px, rgb(224, 224, 214) 1.0806px 1.68294px 0px, rgb(224, 224, 214) 0.141474px 1.99499px 0px, rgb(224, 224, 214) -0.832294px 1.81859px 0px, rgb(224, 224, 214) -1.60229px 1.19694px 0px, rgb(224, 224, 214) -1.97998px 0.28224px 0px, rgb(224, 224, 214) -1.87291px -0.701566px 0px, rgb(224, 224, 214) -1.30729px -1.5136px 0px, rgb(224, 224, 214) -0.421592px -1.95506px 0px, rgb(224, 224, 214) 0.567324px -1.91785px 0px, rgb(224, 224, 214) 1.41734px -1.41108px 0px, rgb(224, 224, 214) 1.92034px -0.558831px 0px;
+    //text-shadow: rgb(224, 224, 214) 2px 0px 0px, rgb(224, 224, 214) 1.75517px 0.958851px 0px, rgb(224, 224, 214) 1.0806px 1.68294px 0px, rgb(224, 224, 214) 0.141474px 1.99499px 0px, rgb(224, 224, 214) -0.832294px 1.81859px 0px, rgb(224, 224, 214) -1.60229px 1.19694px 0px, rgb(224, 224, 214) -1.97998px 0.28224px 0px, rgb(224, 224, 214) -1.87291px -0.701566px 0px, rgb(224, 224, 214) -1.30729px -1.5136px 0px, rgb(224, 224, 214) -0.421592px -1.95506px 0px, rgb(224, 224, 214) 0.567324px -1.91785px 0px, rgb(224, 224, 214) 1.41734px -1.41108px 0px, rgb(224, 224, 214) 1.92034px -0.558831px 0px;
+}
+
+
 .our-services-title {
 
 
@@ -127,4 +141,24 @@ footer {
 
 #workshop-details {
     //  background-color: $lightgreen;
+}
+
+.workshop-card-title {
+    color: $grey;
+    //font-size: 1em;
+}
+
+.cafe-section-title {
+
+
+    h2 {
+        color: $grey;
+
+    }
+
+    p {
+
+        color: $grey;
+    }
+
 }

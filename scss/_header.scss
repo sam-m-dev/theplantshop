@@ -1,5 +1,6 @@
 .navbar {
     width: 100%;
+    background-color: $transparentWhite;
 }
 
 
@@ -11,6 +12,8 @@
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -26,6 +29,18 @@ header {
     background-size: cover;
     position: relative;
 
+}
+
+.collapsebtn {
+    background: transparent;
+    width: 4em;
+    height: 4em;
+    border: 1px solid $darkgreen;
+
+    .fa-brands {
+        font-size: 2em;
+        color: $grey;
+    }
 }
 
 
