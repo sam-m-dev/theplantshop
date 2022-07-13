@@ -1,77 +1,74 @@
 $(window).on('load', function (e) {
 
-    // $('.workshop-overlay').empty();
-    function bannerTimeout() {
-        var element = document.getElementById('#heroText');
-        // element.style.display = "block";
-        // setTimeout(function () {
-        $('#heroText').css("visibility", "visible");
-        // element.style.display = "none";
-        // }, 10000); 
-        // $('#heroText').css("visibility", "visible");
-        if ($('#heroText').is(":visible")) {
-            setTimeout(function () {
-                $('#heroText').css("visibility", "hidden");
-                // element.style.display = "none";
-            }, 10000); // 1000ms = 1 second
-        }
 
-    }
-    // bannerTimeout() ;
-    const images = document.querySelectorAll('.homeImage-text');
-    const config = {
+    // function bannerTimeout() {
+    //     var element = document.getElementById('#heroText');
 
-        threshold: [0]
-    };
+    //     $('#heroText').css("visibility", "visible");
 
-    observer = new IntersectionObserver((entries) => {
-        // console.log(images);
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-                entry.target.classList.add('move');
+    //     if ($('#heroText').is(":visible")) {
+    //         setTimeout(function () {
+    //             $('#heroText').css("visibility", "hidden");
 
-                console.log(entry.target);
-                $('#shop').css("visibility", "visible")
-                //  $('#shop').append('<a href="/about.html">Our<br> Shop</a>');
-                $('#team').css("visibility", "visible");
-                //entry.target.append("<p>Test</p>");
-                console.log("moved")
-                observer.unobserve(entry.target);
-            } else {
-                console.log('out of view');
-            }
-        });
-    }, config);
+    //         }, 10000);
+    //     }
 
-    images.forEach(image => {
-        console.log(image);
-        observer.observe(image);
-    });
+    // }
+    // // bannerTimeout() ;
+    // const images = document.querySelectorAll('.homeImage-text');
+    // const config = {
 
-    // 
-    const serviceImage = document.querySelectorAll('.banner-text-services');
+    //     threshold: [0]
+    // };
 
-    observer = new IntersectionObserver((entries) => {
-        // console.log(images);
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-                entry.target.classList.add('move');
-                console.log("service reached")
-            }
-        });
-    });
+    // observer = new IntersectionObserver((entries) => {
+    //     // console.log(images);
+    //     entries.forEach(entry => {
+    //         if (entry.intersectionRatio > 0) {
+    //             entry.target.classList.add('move');
 
-    serviceImage.forEach(image => {
-        observer.observe(image);
-    });
+    //             console.log(entry.target);
+    //             $('#shop').css("visibility", "visible")
+    //             //  $('#shop').append('<a href="/about.html">Our<br> Shop</a>');
+    //             $('#team').css("visibility", "visible");
+    //             //entry.target.append("<p>Test</p>");
+    //             console.log("moved")
+    //             observer.unobserve(entry.target);
+    //         } else {
+    //             console.log('out of view');
+    //         }
+    //     });
+    // }, config);
 
-    //new Glide('.glide').mount()
+    // images.forEach(image => {
+    //     console.log(image);
+    //     observer.observe(image);
+    // });
+
+    // // 
+    // const serviceImage = document.querySelectorAll('.banner-text-services');
+
+    // observer = new IntersectionObserver((entries) => {
+    //     // console.log(images);
+    //     entries.forEach(entry => {
+    //         if (entry.intersectionRatio > 0) {
+    //             entry.target.classList.add('move');
+    //             console.log("service reached")
+    //         }
+    //     });
+    // });
+
+    // serviceImage.forEach(image => {
+    //     observer.observe(image);
+    // });
+
+
     var glide = new Glide('.glide', {
         type: 'carousel',
         startAt: 0,
         perView: 1,
         focusAt: 'center',
-        animationDuration: 3000,
+        animationDuration: 1500,
         breakpoints: {
             480: {
                 //  gap: 15,
@@ -100,67 +97,59 @@ $(window).on('load', function (e) {
         $('.reset').css("display", "block");
         switch (workshopId) {
             case 1:
-                // alert("success"+workshopId);
-                console.log('test')
+                //console.log('test')
                 $('.workshop-card-text').html('content 1');
                 $('.workshop-card-title').html('title1');
 
                 break;
             case 2:
-                //  alert("success" + workshopId);
+
                 $('.workshop-card-text').html('content 2');
                 $('.workshop-card-title').html('title2');
                 break;
 
             case 3:
-                //  alert("success" + workshopId);
+
                 $('.workshop-card-text').html('content 3');
                 $('.workshop-card-title').html('title 3');
                 break;
 
             case 4:
-                // alert("success" + workshopId);
+
                 $('.workshop-card-text').html('content 4');
                 $('.workshop-card-title').html('title 4');
 
                 break;
 
             case 5:
-                // alert("success" + workshopId);
-                //  $('.workshop-overlay').empty();
-                $('.workshop-card-text').empty();
-                $('.workshop-card-title').html('Workshops');
+                $('.workshop-card').css("display", "none");
+                $('.workshop-placeholder').css("display", "flex");
                 $('.reset').css("display", "none");
                 break;
 
 
 
             default:
-                // alert(workshopId);
+
                 $('.workshop-img').html("<p>Hello World</p>");
-            // code block
+
         }
-        //   showButton();
-        //  $('.workshop-img').css("background-color", "red")
+
 
     }
+
+    //display reset button and trigger workshopdetails function
     $('.workshop-item').click(function () {
         $('.reset').css("display", "block");
-        //  alert("test");
+        $('.workshop-placeholder').css("display", "none")
+        $('.workshop-card').css("display", "flex")
+
         var selectedWorkshop = parseInt(this.id);
         workshopDetails(selectedWorkshop);
 
     });
 
-    // showButton();
-    // function showButton(){
-    //     if ($('.workshop-overlay').is(':empty')) {
 
-
-    //     }else{
-    //         $('.reset').show();
-    //     }
-    // }
 
 
     $('.reset').click(function () {
@@ -181,6 +170,15 @@ $(window).on('load', function (e) {
     mountSlider();
 
 
+
+
+    // const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
+    // firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+    //     // do something...
+    //     console.log('test');
+    //     console.log(this.firstScrollSpyEl);
+    // })
+
 });
 
 
@@ -188,7 +186,34 @@ $(window).on('load', function (e) {
 
 
 // $(document).ready(function () {
-//     console.log("ready!");
-//     $('.glide-wrapper').css("display", "block");
+
+
+
+//     $(window).on('activate.bs.scrollspy', function (e) {
+//         var activate;
+//         var activeSectionId;
+//         var activeSection;
+//         var dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]');
+//         // console.log('test' + dataSpyList.values());
+//         for (const value of dataSpyList.values()) {
+//             //   console.log(value);
+//             activeSection = bootstrap.ScrollSpy.getInstance(value);
+//             activeSectionId = activeSection._activeTarget;
+
+//         }
+//         console.log("id" + activeSectionId);
+//         activate = document.getElementById(activeSectionId);
+     
+
+//         let result = activeSectionId.toString();
+//         let stringlength = result.length;
+//         let part = result.slice(1, stringlength);
+     
+
+//         console.log("result" + document.getElementById(part).className);
+
+//     })
+
+
 // });
 

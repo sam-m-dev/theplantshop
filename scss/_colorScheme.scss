@@ -162,3 +162,21 @@ footer {
     }
 
 }
+
+.offcanvas {
+    background-color: $darkgreen;
+}
+
+.offcanvas-header {
+    color: $grey;
+}
+
+.offcanvas-nav {
+
+    li {
+        a {
+            color: $grey;
+
+        }
+    }
+}

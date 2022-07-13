@@ -1,184 +1,8 @@
-// .workshop {
-//     display: flex;}
-
-// .workshop-info-wrapper {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: flex-end;
-//     padding: 0px;
-
-// }
-
-// .workshop-card {
-//     padding: 0px;
-//     flex-direction: column;
-//     display: flex;
-//     height: auto;
-//     width: 100%;
-//     justify-content: center;
-// }
-
-// .workshop-section-title {
-//     display: flex;
-//     width: 100%;
-
-
-// }
-
-// .workshop-item {
-//     height: auto;
-//     padding-right: 0px;
-//     padding-left: 0px;
-//     height: auto;
-
-//     border-radius: 0px;
-//     border: none;
-//   box-shadow: 9px 11px 14px 4px rgba(91, 186, 111, 0.5);
-// }
-
-// .workshop-title {
-//     color: $grey;
-//     font-size: 0.5em;
-// }
-
-
-
-// .workshop-overlay {
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     align-items: center;
-
-// }
-
-// .workshop-img {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     width: 100%;
-// }
-
-// .workshop-overlay-wrapper {
-//     position: absolute;
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-
-// }
-
-// .workshop-row {
-//     display: flex;
-//     width: 95%;
-//     margin: 0px;
-
-// }
-
-// .workshop-title {
-//     h2 {
-//         font-size: 0.3em;
-//     }
-// }
-
-// .hours-card {
-//     padding: 0px;
-//     border: none;
-// }
-
-
-
-
-// .workshop-section {
-//     display: flex;
-//     flex-direction: column;
-//     padding: 5% 0;
-
-//     justify-content: center;
-//     background-color: $darkgreen;
-// }
-
-// .workshop-container {
-//     display: flex;
-//     margin: 5% 0;
-//     width: 100%;
-//     justify-content: center;
-//     padding: 5% 0;
-// }
-
-// .workshop-pic {
-//     border-radius: 0px;
-//     height: 100%
-// }
-
-
-// .workshop-item {
-//     border-left: 1px solid $lightgreen;
-// }
-
-
-
-// .workshop-img-wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     height: 100%;
-//     justify-content: center;
-// }
-
-
-// .workshop-card {
-//     border: none;
-// }
-
-// .workshop-card-title {
-//     margin-bottom: 0px;
-//     color:$grey;
-// }
-
-// .workshop-overlay {
-//     padding: 0px;
-// }
-
-
-
-// @media (min-width: 576px) {
-
-//     .workshop-section,
-//     .workshop-container {
-//         padding: 2% 0;
-//     }
-
-//     .workshop-container {
-//         margin: 2% 0;
-//     }
-
-
-//     .workshop-row {
-
-//         width: 100%;
-
-//     }
-
-// }
-.reset {
-    display: none;
-}
-
 .workshop-section,
 .workshop-container,
-
 .workshop-info-wrapper {
     display: flex;
     width: 100%;
-
-}
-
-.workshop-row {
-    display: flex;
-    width: 95%;
-}
-
-.workshop-container {
-    justify-content: center;
 }
 
 .workshop-img,
@@ -190,10 +14,24 @@
 
 }
 
+.reset {
+    display: none;
+}
+
+.workshop-row {
+    display: flex;
+    width: 95%;
+}
+
+.workshop-container {
+    justify-content: center;
+}
+
+
+
 
 .workshop-card {
     position: relative;
-    //  background-color: $darkgreen;
 }
 
 .workshop-section {
@@ -238,6 +76,11 @@
     }
 }
 
+.workshop-card-overlay:hover {
+
+    background-color: $transparentBlack;
+}
+
 .workshop-overlay {
     position: absolute;
     display: flex;
@@ -256,7 +99,48 @@
 
 .workshop-title {
     display: flex;
-    // width: 100%;
     word-break: break-word;
     height: auto;
 }
+
+.workshop-card {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.workshop {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.workshop-placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+// @media (min-width: 576px) {
+
+//     .workshop-section,
+//     .workshop-container {
+//         padding: 2% 0;
+//     }
+
+//     .workshop-container {
+//         margin: 2% 0;
+//     }
+
+
+//     .workshop-row {
+
+//         width: 100%;
+
+//     }
+
+// }

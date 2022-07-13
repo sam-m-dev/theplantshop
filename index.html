@@ -21,13 +21,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" tabindex="0">
+    <header id="'home">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar-scrollspy">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#">
-                    <h1>The Plant Shop <i class="fa-brands fa-pagelines"></i></h1>
+                    <h1>The Plant Cafe <i class="fa-brands fa-pagelines"></i></h1>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -40,54 +40,95 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link" href="#new">New</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#workshop">workshop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#florist">florist</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cafe">cafe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#location">location</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
+                        </li> -->
                     </ul>
 
                 </div>
             </div>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
 
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <div class="offcanvas-header">the plant cafe</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
 
                 <div class="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
-                        images, lists,
-                        etc.
+                    <div class="offcanvas-nav-wrapper">
+                        <ul class="offcanvas-nav">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#new">New</a></li>
+                            <li><a href="#workshop">workshop</a></li>
+                            <li><a href="#florist">florist</a></li>
+                            <li><a href="#cafe">cafe</a></li>
+                            <li><a href="#location">location</a></li>
+                            <li><a href="#contact">contact</a></li>
+
+                        </ul>
                     </div>
-                    <div class="dropdown mt-3">
+                    <!-- <div class="dropdown mt-3">
+
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown">
                             Dropdown button
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Home</a></li>
-                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="#home">Home</a></li>
+                            <li><a class="dropdown-item" href="#serives">Services</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>
 
+        <div class="header-overlay">
+            <div class="header-text">
+                <h1>the</h1>
+                <br>
+                <h1>plant </h1>
+                <br>
+                <h1> cafe</h1>
+            </div>
+        </div>
+
     </header>
 
-    <section class="services-section ">
+    <section class="services-section " id="services">
 
         <div class="our-services-title">
             <h2>our services</h2>
@@ -103,7 +144,7 @@
 
     </section>
 
-    <section class="plant-arrivals ">
+    <section class="plant-arrivals " id="new">
 
         <div class="pant-section-wrapper">
 
@@ -192,7 +233,7 @@
 
     </section>
 
-    <section class="workshop-section ">
+    <section class="workshop-section " id="workshop">
 
         <div class="workshop-container ">
 
@@ -237,27 +278,29 @@
                 </div>
 
                 <div class="workshop " id="workshop-details">
-                    <div class="workshop-img">
-                        <div class="workshop-img-wrapper">
-
-                            <div class="workshop-card">
-                                <div class="workshop-details-overlay ">
-                                    <button class="reset" id="5">close x </button>
-                                    <h2 class="workshop-card-title ">Workshops</h2>
-                                    <p class="workshop-card-text "></p>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                        </div>
-
+                    <!-- <div class="workshop-img"> -->
+                    <!-- <div class="workshop-img-wrapper"> -->
+                    <div class="workshop-placeholder">
+                        <h2 class="workshop-placeholder-title ">Workshops</h2>
                     </div>
+                    <div class="workshop-card">
+                        <!-- <div class="workshop-details-overlay "> -->
+                        <button class="reset" id="5">close x </button>
+                        <h2 class="workshop-card-title "></h2>
+                        <p class="workshop-card-text "></p>
+                        <p class="card-text"></p>
+                        <!-- </div> -->
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- </div> -->
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="florist-section ">
+    <section class="florist-section " id="florist">
         <div class="florist-section-title ">
             <h2>
                 Florist
@@ -338,7 +381,7 @@
 
     </section>
 
-    <section class="cafe-section">
+    <section class="cafe-section" id="cafe">
 
 
         <div class="cafe-location-wrapper row">
@@ -371,11 +414,9 @@
 
     </section>
 
-    <section class="location-section">
 
-    </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="location">
 
         <div class="contact-section-title">
             <h1> Find our Shop</h1>
@@ -456,7 +497,7 @@
 
     <!-- </div>
 </div> -->
-    <footer>
+    <footer id="contact">
         <div class="footer-wrapper">
 
             <div class="footer-links">

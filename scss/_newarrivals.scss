@@ -1,89 +1,92 @@
-    .new-text {
-        font-family: "Cantata One",
-            serif;
-        font-size: 0.8em;
-        text-align: inherit;
-    }
+.plant-arrivals {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
 
-    .plant-arrivals {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        //height: 50vh;
-        justify-content: space-evenly;
-    }
+.pant-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding: 5% 0;
+    margin: 5% 0;
+}
+
+.arrival-section-title {
+    margin: 0 0 5% 0;
+    padding: 0 0 3% 0;
+}
+
+.arrivals-card-title {
+    margin: 0 0 2% 0;
+    padding: 0 0 5% 0;
+}
+
+// Carousel
+
+.glide-controls {
+    display: flex;
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.glide-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.glide {
+    visibility: hidden;
+}
+
+.activeSlider {
+    visibility: visible;
+}
+
+
+.glide__bullets {
+    bottom: 0px;
+}
+
+// Carousel items
+
+.arrivals-card {
+    border: none;
+}
+
+.arrivals-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrivals-card-img:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.5s ease 0s;
+}
+
+
+
+@media (min-width: 576px) {
 
     .pant-section-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: auto;
-        padding: 5% 0;
-        margin: 5% 0;
+        padding: 2% 0;
+        margin: 3% 0;
     }
 
-    .arrivals-card {
-        border: none;
-    }
-
-    .arrivals-card-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // top:unset;
-        // bottom:unset;
-        // right:unset;
-
-    }
-
-
-
-    .glide-controls {
-        display: flex;
-        position: absolute;
-        bottom: 45%;
-        width: 100%;
-        justify-content: space-between;
-        height: 10%;
+    .arrival-section-title {
+        margin: 2% 0;
+        padding: 2% 0;
     }
 
     .glide-wrapper {
-        display: flex;
-        // visibility:hidden;
-        //display: none;
-        position: relative;
+        margin: 2% 0;
+        padding: 3% 0;
     }
 
-    .glide {
-        visibility: hidden;
-    }
-
-    .activeSlider {
-        visibility: visible;
-    }
-
-
-    .glide__bullets {
-        bottom: 0px;
-    }
-
-
-    @media (min-width: 576px) {
-
-        .pant-section-wrapper {
-            padding: 2% 0;
-            margin: 3% 0;
-        }
-
-        .arrival-section-title {
-            margin: 2% 0;
-            padding: 2% 0;
-        }
-
-        .glide-wrapper {
-            margin: 2% 0;
-            padding: 3% 0;
-        }
-
-    }
+}
