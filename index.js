@@ -88,7 +88,7 @@ $(window).on('load', function (e) {
                 perView: 5
             }
         }
-    })
+    }).mount();
 
 
 
