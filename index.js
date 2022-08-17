@@ -1,5 +1,5 @@
 $(window).on('load', function (e) {
-
+    new Glide(".glide").mount();
 
     // function bannerTimeout() {
     //     var element = document.getElementById('#heroText');
@@ -63,32 +63,32 @@ $(window).on('load', function (e) {
     // });
 
 
-    var glide = new Glide('.glide', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 1,
-        focusAt: 'center',
-        animationDuration: 1500,
-        breakpoints: {
-            480: {
-                //  gap: 15,
-                // peek: 75,
-                perView: 1
-            },
-            768: {
-                perView: 2
-            },
-            1360: {
-                perView: 3
-            },
-            1600: {
-                perView: 4
-            },
-            1960: {
-                perView: 5
-            }
-        }
-    }).mount();
+    // var glide = new Glide('.glide', {
+    //     type: 'carousel',
+    //     startAt: 0,
+    //     perView: 1,
+    //     focusAt: 'center',
+    //     animationDuration: 1500,
+    //     breakpoints: {
+    //         480: {
+    //             //  gap: 15,
+    //             // peek: 75,
+    //             perView: 1
+    //         },
+    //         768: {
+    //             perView: 2
+    //         },
+    //         1360: {
+    //             perView: 3
+    //         },
+    //         1600: {
+    //             perView: 4
+    //         },
+    //         1960: {
+    //             perView: 5
+    //         }
+    //     }
+    // });
 
 
 
