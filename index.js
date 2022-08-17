@@ -1,95 +1,37 @@
 $(window).on('load', function (e) {
-    new Glide(".glide").mount();
-
-    // function bannerTimeout() {
-    //     var element = document.getElementById('#heroText');
-
-    //     $('#heroText').css("visibility", "visible");
-
-    //     if ($('#heroText').is(":visible")) {
-    //         setTimeout(function () {
-    //             $('#heroText').css("visibility", "hidden");
-
-    //         }, 10000);
-    //     }
-
-    // }
-    // // bannerTimeout() ;
-    // const images = document.querySelectorAll('.homeImage-text');
-    // const config = {
-
-    //     threshold: [0]
-    // };
-
-    // observer = new IntersectionObserver((entries) => {
-    //     // console.log(images);
-    //     entries.forEach(entry => {
-    //         if (entry.intersectionRatio > 0) {
-    //             entry.target.classList.add('move');
-
-    //             console.log(entry.target);
-    //             $('#shop').css("visibility", "visible")
-    //             //  $('#shop').append('<a href="/about.html">Our<br> Shop</a>');
-    //             $('#team').css("visibility", "visible");
-    //             //entry.target.append("<p>Test</p>");
-    //             console.log("moved")
-    //             observer.unobserve(entry.target);
-    //         } else {
-    //             console.log('out of view');
-    //         }
-    //     });
-    // }, config);
-
-    // images.forEach(image => {
-    //     console.log(image);
-    //     observer.observe(image);
-    // });
-
-    // // 
-    // const serviceImage = document.querySelectorAll('.banner-text-services');
-
-    // observer = new IntersectionObserver((entries) => {
-    //     // console.log(images);
-    //     entries.forEach(entry => {
-    //         if (entry.intersectionRatio > 0) {
-    //             entry.target.classList.add('move');
-    //             console.log("service reached")
-    //         }
-    //     });
-    // });
-
-    // serviceImage.forEach(image => {
-    //     observer.observe(image);
-    // });
+  
 
 
-    // var glide = new Glide('.glide', {
-    //     type: 'carousel',
-    //     startAt: 0,
-    //     perView: 1,
-    //     focusAt: 'center',
-    //     animationDuration: 1500,
-    //     breakpoints: {
-    //         480: {
-    //             //  gap: 15,
-    //             // peek: 75,
-    //             perView: 1
-    //         },
-    //         768: {
-    //             perView: 2
-    //         },
-    //         1360: {
-    //             perView: 3
-    //         },
-    //         1600: {
-    //             perView: 4
-    //         },
-    //         1960: {
-    //             perView: 5
-    //         }
-    //     }
-    // });
+    var glide = new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        focusAt: 'center',
+        animationDuration: 1500,
+        breakpoints: {
+            480: {
+                perView: 1
+            },
+            768: {
+                perView: 2
+            },
+            1360: {
+                perView: 3
+            },
+            1600: {
+                perView: 4
+            },
+            1960: {
+                perView: 5
+            }
+        }
+    });
 
+    function mountSlider() {
+        glide.mount();
+        $('.glide').addClass('activeSlider');
+    }
+    mountSlider();
 
 
 
@@ -97,7 +39,7 @@ $(window).on('load', function (e) {
         $('.reset').css("display", "block");
         switch (workshopId) {
             case 1:
-                //console.log('test')
+      
                 $('.workshop-card-text').html('content 1');
                 $('.workshop-card-title').html('title1');
 
@@ -163,11 +105,7 @@ $(window).on('load', function (e) {
 
     });
 
-    function mountSlider() {
-        glide.mount();
-        $('.glide').addClass('activeSlider');
-    }
-    mountSlider();
+
 
 
 
