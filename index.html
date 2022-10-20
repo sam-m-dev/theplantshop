@@ -22,16 +22,16 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" tabindex="0">
-    <header id="'home">
+    <header id="home">
         <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar-scrollspy">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#">
-                    <h1>The Plant Shop <i class="fa-brands fa-pagelines"></i></h1>
+                    <h1>The Plant Cafe <i class="fa-brands fa-pagelines"></i></h1>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                    aria-controls="offcanvas">
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
@@ -78,10 +78,11 @@
                 </div>
             </div>
 
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas"
+                aria-labelledby="offcanvas">
 
-                <div class="offcanvas-header">the plant cafe</h5>
+                <div class="offcanvas-header">
+                    <h1>The Plant Shop</h1>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -100,18 +101,7 @@
 
                         </ul>
                     </div>
-                    <!-- <div class="dropdown mt-3">
 
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#home">Home</a></li>
-                            <li><a class="dropdown-item" href="#serives">Services</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
         </nav>
@@ -136,9 +126,11 @@
 
         <div class="our-services-content">
             <ul class="services-list">
-                <li><img src="./assets/nursery.jpg" class="rounded-circle"> </li>
-                <li><img src="./assets/bouquet.jpg" class="rounded-circle"></li>
-                <li><img src="./assets/workshop.jpg" class="rounded-circle"></li>
+                <li><img src="./assets/nursery.jpg" class="rounded-circle" alt="close up on two plants in a pot"> </li>
+                <li><img src="./assets/bouquet.jpg" class="rounded-circle"
+                        alt="close up on a bouquet of white flowers in a vase"></li>
+                <li><img src="./assets/workshop.jpg" class="rounded-circle"
+                        alt="close up on three plant cuttings in soil"></li>
             </ul>
         </div>
 
@@ -160,7 +152,7 @@
                         <ul class="glide__slides">
                             <li class="glide__slide">
                                 <div class="arrivals-card card ">
-                                    <img src="./assets/new/misc.jpg" class="rounded">
+                                    <img src="./assets/new/misc.jpg" class="rounded" alt="plant in a pot">
                                     <div class="arrivals-card-img card-img-overlay">
                                         <h2 class="plant-card-title card-title">Other</h2>
                                     </div>
@@ -168,7 +160,8 @@
                             </li>
                             <li class="glide__slide">
                                 <div class="arrivals-card card ">
-                                    <img src="./assets/new/alocasia.jpg" class="rounded">
+                                    <img src="./assets/new/alocasia.jpg" class="rounded"
+                                        alt="picture of an alocasia plant in a pot">
                                     <div class="arrivals-card-img card-img-overlay">
                                         <h2 class="plant-card-title card-title">alocasia</h2>
                                     </div>
@@ -176,7 +169,8 @@
                             </li>
                             <li class="glide__slide">
                                 <div class="arrivals-card card ">
-                                    <img src="./assets/new/calatea.jpg" class="rounded">
+                                    <img src="./assets/new/calatea.jpg" class="rounded"
+                                        alt="picture of a calatea plant in a pot">
                                     <div class="arrivals-card-img card-img-overlay">
                                         <h2 class="plant-card-title card-title">calatea</h2>
                                     </div>
@@ -184,7 +178,8 @@
                             </li>
                             <li class="glide__slide">
                                 <div class="arrivals-card card ">
-                                    <img src="./assets/new/monsteraMedium.jpg" class="rounded">
+                                    <img src="./assets/new/monsteraMedium.jpg" class="rounded"
+                                        alt="picture of a monstera in a pot">
                                     <div class="arrivals-card-img card-img-overlay">
                                         <h2 class="plant-card-title card-title">Monstera</h2>
                                     </div>
@@ -192,7 +187,8 @@
                             </li>
                             <li class="glide__slide">
                                 <div class="arrivals-card card ">
-                                    <img src="./assets/new/peperomiasmall.jpg" class="rounded">
+                                    <img src="./assets/new/peperomiasmall.jpg" class="rounded"
+                                        alt="picture of a peperomia plant in a pot">
                                     <div class="arrivals-card-img card-img-overlay">
                                         <h2 class="plant-card-title card-title">Peperomia</h2>
 
@@ -202,7 +198,8 @@
                             <li class="glide__slide">
 
                                 <div class="arrivals-card card ">
-                                    <img src="./assets/new/ufo.jpg" class="rounded">
+                                    <img src="./assets/new/ufo.jpg" class="rounded"
+                                        alt="picture of a ufo plant in a pot">
                                     <div class="arrivals-card-img card-img-overlay">
                                         <h2 class="plant-card-title card-title">U.F.O</h2>
                                     </div>
@@ -244,7 +241,7 @@
                     <div class="workshop-categories" id="workshop-row1">
 
                         <div class="workshop-item " id="1">
-                            <img src="./assets/wrkshp1.jpg" class="workshop-pic " alt="...">
+                            <img src="./assets/wrkshp1.jpg" class="workshop-pic " alt="leaves background">
                             <div class="workshop-card-overlay">
                                 <h2 class="workshop-title ">Repot</h2>
                             </div>
@@ -252,7 +249,7 @@
                         </div>
 
                         <div class="workshop-item  " id="2">
-                            <img src="./assets/wrkshp2.jpg" class="workshop-pic " alt="...">
+                            <img src="./assets/wrkshp2.jpg" class="workshop-pic " alt="leaves background">
                             <div class="workshop-card-overlay">
                                 <h2 class="workshop-title">Propagate</h2>
                             </div>
@@ -260,7 +257,7 @@
                         </div>
 
                         <div class="workshop-item " id="3">
-                            <img src="./assets/wrkshp3.jpg" class="workshop-pic " alt="...">
+                            <img src="./assets/wrkshp3.jpg" class="workshop-pic " alt="leaves background">
                             <div class="workshop-card-overlay">
 
                                 <h2 class="workshop-title">Learn</h2>
@@ -269,7 +266,7 @@
                         </div>
 
                         <div class="workshop-item" id="4">
-                            <img src="./assets/wrkshp4.jpg" class="workshop-pic " alt="...">
+                            <img src="./assets/wrkshp4.jpg" class="workshop-pic " alt="leaves background">
                             <div class="workshop-card-overlay">
                                 <h2 class="workshop-title">Other</h2>
                             </div>
@@ -278,22 +275,20 @@
                 </div>
 
                 <div class="workshop " id="workshop-details">
-                    <!-- <div class="workshop-img"> -->
-                    <!-- <div class="workshop-img-wrapper"> -->
+
+
                     <div class="workshop-placeholder">
-                        <h2 class="workshop-placeholder-title ">Workshops</h2>
+                        <h2 class="workshop-placeholder-title">Workshops</h2>
                     </div>
                     <div class="workshop-card">
-                        <!-- <div class="workshop-details-overlay "> -->
+
                         <button class="reset" id="5">close x </button>
                         <h2 class="workshop-card-title "></h2>
                         <p class="workshop-card-text "></p>
                         <p class="card-text"></p>
-                        <!-- </div> -->
-                    </div>
-                    <!-- </div> -->
 
-                    <!-- </div> -->
+                    </div>
+
                 </div>
             </div>
 
@@ -329,7 +324,8 @@
                     <div class="florist-wrapper col-8">
 
                         <div class="florist-img-wrapper">
-                            <img src="assets/homeImages/bouquet12.jpg" class="rounded">
+                            <img src="assets/homeImages/bouquet12.jpg" class="rounded"
+                                alt="bouquet in a vase with red and pink flowers ">
                         </div>
 
 
@@ -338,29 +334,13 @@
                     <div class="florist-wrapper col-4" id="flowers2">
 
                         <div class="florist-img-wrapper col-12">
-                            <img src="assets/homeImages/bouquet11.jpg" class="rounded">
+                            <img src="assets/homeImages/bouquet11.jpg" class="rounded" alt="sunflower bouquet">
                         </div>
                         <div class="florist-img-wrapper col-12">
-                            <img src="assets/homeImages/bouquet10.jpg" class="rounded">
+                            <img src="assets/homeImages/bouquet10.jpg" class="rounded"
+                                alt="pink, white and red flower bouquet">
                         </div>
 
-                        <!-- <div class="florist-small row ">
-                                <div class="florist-img-wrapper col-6">
-                                    <img src="assets/new/alocasia.jpg " class="rounded">
-                                </div>
-                                <div class="florist-img-wrapper col-6">
-                                    <img src="assets/new/alocasia.jpg" class="rounded">
-                                </div>
-                            </div>
-
-                            <div class="florist-small row ">
-                                <div class="florist-img-wrapper col-6">
-                                    <img src="assets/new/alocasia.jpg " class="rounded">
-                                </div>
-                                <div class="florist-img-wrapper col-6">
-                                    <img src="assets/new/alocasia.jpg" class="rounded">
-                                </div>
-                            </div> -->
 
                     </div>
 
@@ -387,7 +367,7 @@
         <div class="cafe-location-wrapper row">
             <div class="cafe-section-wrapper  col-12">
                 <div class="hours-card card">
-                    <img src="./assets/cafe2.jpg" class="cafe-img card-img" alt="...">
+                    <img src="./assets/cafe2.jpg" class="cafe-img card-img" alt="photo of the store cafe counter">
                     <div class="hours-card-overlay card-img-overlay">
                         <div class="cafe-section-title">
                             <h2>our cafe</h2>
@@ -405,10 +385,11 @@
 
         <div class="cafe-img">
             <div class="cafe2 col-6">
-                <img src="./assets/cafe4.jpg" class="cafe-img card-img" alt="...">
+                <img src="./assets/cafe4.jpg" class="cafe-img card-img" alt="photo of a selection of coffees">
             </div>
             <div class="cafe3 col-6">
-                <img src="./assets/cafe3.jpg" class="cafe-img card-img" alt="...">
+                <img src="./assets/cafe3.jpg" class="cafe-img card-img"
+                    alt="photo of a corner of the cafe wiath a table an two leather chairs ">
             </div>
         </div>
 
@@ -426,8 +407,7 @@
             <div class="address   col-12 col-sm-6 ">
                 <div class="store-map">
                     <div class="mapouter">
-                        <div class="gmap_canvas "><iframe class="google-map rounded" width="100%" height="100%"
-                                id="gmap_canvas"
+                        <div class="gmap_canvas "><iframe class="google-map rounded" id="gmap_canvas"
                                 src="https://maps.google.com/maps?q=vancouver&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
@@ -461,29 +441,6 @@
                     </div>
 
 
-                    <!-- <form>
-                        <div class="name-input row">
-                            <div class="mb-3">
-                                <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First name"
-                                    aria-label="First name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName"placeholder="Last name" aria-label="Last name">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="emailInput" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="emailInput"
-                                placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="messageInput" class="form-label">Message</label>
-                            <textarea class="form-control" id="messageInput" rows="3"></textarea>
-                        </div>
-                        <button class="submit">submit</button>
-                    </form> -->
                 </div>
 
                 <!-- </div> -->
@@ -561,7 +518,7 @@
    
     -->
     <script src="glide.js"></script>
-        <script src="index.js"></script>
+    <script src="index.js"></script>
 
 </body>
 

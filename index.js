@@ -40,26 +40,26 @@ $(window).on('load', function (e) {
         switch (workshopId) {
             case 1:
       
-                $('.workshop-card-text').html('content 1');
-                $('.workshop-card-title').html('title1');
+                $('.workshop-card-text').html('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');;
+                $('.workshop-card-title').html('Repot');
 
                 break;
             case 2:
 
-                $('.workshop-card-text').html('content 2');
-                $('.workshop-card-title').html('title2');
+                $('.workshop-card-text').html('Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.');
+                $('.workshop-card-title').html('Propagate');
                 break;
 
             case 3:
 
-                $('.workshop-card-text').html('content 3');
-                $('.workshop-card-title').html('title 3');
+                $('.workshop-card-text').html('Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ');
+                $('.workshop-card-title').html('Learn');
                 break;
 
             case 4:
 
-                $('.workshop-card-text').html('content 4');
-                $('.workshop-card-title').html('title 4');
+                $('.workshop-card-text').html('Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+                $('.workshop-card-title').html('Other');
 
                 break;
 
@@ -73,7 +73,7 @@ $(window).on('load', function (e) {
 
             default:
 
-                $('.workshop-img').html("<p>Hello World</p>");
+              //  $('.workshop-img').html("<p>Hello World</p>");
 
         }
 
